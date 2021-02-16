@@ -1,3 +1,6 @@
+from datetime import datetime
+startTime = datetime.now()
+
 def koorde(f,a,b,N):
     '''
     Benaderde oplossing van f(x)=0 in het interval [a,b] met de methode van de koorde (secant method).
@@ -53,3 +56,6 @@ print('Supergolden: {super}'.format(super = supergolden))
 
 error = abs(approx - supergolden)
 print('Error: {error}'.format(error = error))
+
+time = datetime.now() - startTime
+print('Time: {time}'.format(time = time))
